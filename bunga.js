@@ -72,8 +72,7 @@ const sketch = ({ width, height }) => {
 const getGlyph = () => {
    //settingan repaint lukisan bunga
    const glyphs = 'abmcuwr'.split('');
-   const glyphs2 = './:-'.split('');
-   
+
    return random.pick(glyphs);
 };
 
@@ -88,6 +87,7 @@ const loadMeSomeImage = (url) => {
 
 const start = async () => {
    // const url = './assets/bunga3-kotak.jpg';
+   // const url = './assets/bunga2.jpg';
    const url = './assets/bunga4.jpg';
    image = await loadMeSomeImage(url);
    manager = await canvasSketch(sketch, settings);
